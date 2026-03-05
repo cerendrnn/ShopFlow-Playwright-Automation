@@ -45,7 +45,6 @@ public class ProductTest extends BaseTest {
                     .search("iphone");
 
         productPage = searchResultsPage.clickRandomProduct();
-        String productPrice = productPage.getProductPrice();
         assertTrue(productPage.isOtherSellersSectionDisplayed());
 
         List<String> otherPrices = productPage.getOtherPrices();

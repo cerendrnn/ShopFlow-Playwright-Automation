@@ -76,12 +76,6 @@ public class ProductPage extends BasePage {
         return thankYouMessage.isVisible();
     }
 
-    public String getProductPrice(){
-        String priceText = productPrice.textContent();
-        System.out.println("Ürün fiyatı: " + priceText);
-        return priceText;
-    }
-
     public ProductPage clickAddToCard(){
         addToCartButton.scrollIntoViewIfNeeded();
         addToCartButton.click();
